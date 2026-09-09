@@ -1,0 +1,60 @@
+{
+  "categories": [
+    {
+      "id": "puja-essentials",
+      "name": "Puja Essentials",
+      "image": "/images/puja-essentials.jpg"
+    },
+    {
+      "id": "deity-frames",
+      "name": "Deity Frames & Wall Art",
+      "image": "/images/deity-frames.jpg"
+    },
+    {
+      "id": "traditional-wear",
+      "name": "Traditional Wear",
+      "image": "/images/traditional-wear.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "p1",
+      "categoryId": "deity-frames",
+      "name": "Golden Krishna Frame",
+      "price": 1499,
+      "description": "A beautiful golden Krishna framed wall art, premium heritage design.",
+      "image": "/images/krishna-frame.jpg",
+      "variants": ["A4 Size", "A3 Size"]
+    },
+    {
+      "id": "p2",
+      "categoryId": "puja-essentials",
+      "name": "Brass Puja Thali Set",
+      "price": 2499,
+      "description": "A traditional brass puja thali set with diya, incense holder, and bell.",
+      "image": "/images/puja-thali.jpg"
+    },
+    {
+      "id": "p3",
+      "categoryId": "traditional-wear",
+      "name": "Kerala Kasavu Mundu",
+      "price": 899,
+      "description": "Pure cotton Kerala kasavu mundu with premium gold border.",
+      "image": "/images/traditional-mundu.jpg"
+    },
+    {
+      "id": "p4",
+      "categoryId": "puja-essentials",
+      "name": "Sandalwood Incense Sticks",
+      "price": 250,
+      "description": "Hand-rolled pure sandalwood incense for a calming atmosphere."
+    },
+    {
+      "id": "p5",
+      "categoryId": "deity-frames",
+      "name": "Ganesha Brass Idol",
+      "price": 1200,
+      "description": "Intricately carved small brass idol of Lord Ganesha."
+    }
+  ]
+}

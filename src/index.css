@@ -1,0 +1,130 @@
+:root {
+  /* Anandha Bodhi Color Palette */
+  --color-bg-cream: #FAF6EE;
+  --color-accent-dusty-rose: #C89D9B;
+  --color-accent-sandalwood: #D4B895;
+  --color-accent-muted-gold: #C5A059;
+  --color-accent-sage-green: #9CB39E;
+  --color-whatsapp-green: #25D366;
+  
+  --color-text-main: #333333;
+  --color-text-muted: #666666;
+  
+  --color-white: #FFFFFF;
+  --color-card-border: rgba(0,0,0,0.05);
+
+  /* Typography */
+  --font-serif: 'Lora', 'Playfair Display', serif;
+  --font-sans: 'Inter', 'Roboto', sans-serif;
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-bg-cream);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  font-size: 18px; /* Large base font for elderly users */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 500;
+  color: var(--color-text-main);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: var(--font-sans);
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+/* Reusable Utility Classes */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.title-large {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Layouts */
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 480px) {
+  .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Forms & Interactive */
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 8px;
+  min-height: 52px; /* Minimum tap target > 44px */
+  transition: opacity 0.2s;
+}
+
+.btn-primary:active {
+  opacity: 0.8;
+}
+
+.btn-whatsapp {
+  background-color: var(--color-whatsapp-green);
+  color: var(--color-white);
+}
+
+.btn-shop {
+  background-color: var(--color-accent-muted-gold);
+  color: var(--color-white);
+  max-width: 300px;
+  margin: 0 auto 3rem auto;
+}
+
+/* Placeholder for images */
+.img-placeholder {
+  background-color: #F0EBE0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-accent-sandalwood);
+  font-style: italic;
+}
