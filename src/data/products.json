@@ -1,60 +1,113 @@
 {
+  "whatsappNumber": "910000000000",
+  "brandName": "Anandha Bodhi",
   "categories": [
     {
       "id": "puja-essentials",
       "name": "Puja Essentials",
-      "image": "/images/puja-essentials.jpg"
+      "nameMl": "പൂജ ഉപകരണങ്ങൾ",
+      "image": "/images/cat-puja-essentials.jpg"
     },
     {
       "id": "deity-frames",
       "name": "Deity Frames & Wall Art",
-      "image": "/images/deity-frames.jpg"
+      "nameMl": "ദേവ ചിത്രങ്ങൾ",
+      "image": "/images/cat-deity-frames.jpg"
     },
     {
       "id": "traditional-wear",
       "name": "Traditional Wear",
-      "image": "/images/traditional-wear.jpg"
+      "nameMl": "പരമ്പരാഗത വസ്ത്രം",
+      "image": "/images/cat-traditional-wear.jpg"
+    },
+    {
+      "id": "puja-room",
+      "name": "Puja Room",
+      "nameMl": "പൂജ മുറി",
+      "image": null,
+      "comingSoon": true
+    },
+    {
+      "id": "sacred-home",
+      "name": "Sacred Home",
+      "nameMl": "ഭവന ഭക്തി",
+      "image": null,
+      "comingSoon": true
+    },
+    {
+      "id": "gifting",
+      "name": "Gifting",
+      "nameMl": "സമ്മാനങ്ങൾ",
+      "image": null,
+      "comingSoon": true
     }
   ],
   "products": [
     {
-      "id": "p1",
-      "categoryId": "deity-frames",
-      "name": "Golden Krishna Frame",
-      "price": 1499,
-      "description": "A beautiful golden Krishna framed wall art, premium heritage design.",
-      "image": "/images/krishna-frame.jpg",
-      "variants": ["A4 Size", "A3 Size"]
-    },
-    {
-      "id": "p2",
+      "id": "pe-001",
       "categoryId": "puja-essentials",
       "name": "Brass Puja Thali Set",
+      "nameMl": "ഓടു പൂജ താലം",
       "price": 2499,
-      "description": "A traditional brass puja thali set with diya, incense holder, and bell.",
+      "description": "Complete brass thali with diya, bell, and small bowls.",
       "image": "/images/puja-thali.jpg"
     },
     {
-      "id": "p3",
-      "categoryId": "traditional-wear",
-      "name": "Kerala Kasavu Mundu",
-      "price": 899,
-      "description": "Pure cotton Kerala kasavu mundu with premium gold border.",
-      "image": "/images/traditional-mundu.jpg"
+      "id": "pe-002",
+      "categoryId": "puja-essentials",
+      "name": "Brass Diya – Single",
+      "nameMl": "ഓടു ദീപം",
+      "price": 350,
+      "description": "Traditional single-wick brass oil lamp.",
+      "image": null
     },
     {
-      "id": "p4",
+      "id": "pe-003",
       "categoryId": "puja-essentials",
       "name": "Sandalwood Incense Sticks",
+      "nameMl": "ചന്ദന അഗർബത്തി",
       "price": 250,
-      "description": "Hand-rolled pure sandalwood incense for a calming atmosphere."
+      "description": "Pure sandalwood hand-rolled incense. 20 sticks per pack.",
+      "image": null
     },
     {
-      "id": "p5",
+      "id": "df-001",
       "categoryId": "deity-frames",
-      "name": "Ganesha Brass Idol",
-      "price": 1200,
-      "description": "Intricately carved small brass idol of Lord Ganesha."
+      "name": "Lord Krishna Frame",
+      "nameMl": "ശ്രീ കൃഷ്ണൻ ചിത്രം",
+      "price": 999,
+      "description": "Premium printed photo frame with golden border.",
+      "image": "/images/krishna-frame.jpg",
+      "variants": ["A4 (21×30 cm)", "A3 (30×42 cm)"]
+    },
+    {
+      "id": "df-002",
+      "categoryId": "deity-frames",
+      "name": "Lord Ganesha Frame",
+      "nameMl": "ഗണേശൻ ചിത്രം",
+      "price": 999,
+      "description": "Premium printed photo frame with golden border.",
+      "image": "/images/cat-deity-frames.jpg",
+      "variants": ["A4 (21×30 cm)", "A3 (30×42 cm)"]
+    },
+    {
+      "id": "tw-001",
+      "categoryId": "traditional-wear",
+      "name": "Kerala Kasavu Mundu",
+      "nameMl": "കേരള കസവ് മുണ്ട്",
+      "price": 899,
+      "description": "Pure cotton with premium gold zari border.",
+      "image": "/images/traditional-mundu.jpg",
+      "variants": ["Small", "Medium", "Large", "XL"]
+    },
+    {
+      "id": "tw-002",
+      "categoryId": "traditional-wear",
+      "name": "Kerala Kasavu Saree",
+      "nameMl": "കേരള കസവ് സാരി",
+      "price": 1599,
+      "description": "Authentic Kerala cotton saree with gold kasavu border.",
+      "image": "/images/cat-traditional-wear.jpg"
     }
   ]
 }
