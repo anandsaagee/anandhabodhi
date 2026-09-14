@@ -6,89 +6,612 @@
       "id": "puja-essentials",
       "name": "Puja Essentials",
       "nameMl": "പൂജ ഉപകരണങ്ങൾ",
+      "emoji": "🪔",
       "image": "/images/cat-puja-essentials.jpg"
     },
     {
-      "id": "deity-frames",
-      "name": "Deity Frames & Wall Art",
-      "nameMl": "ദേവ ചിത്രങ്ങൾ",
+      "id": "god-goddess",
+      "name": "God & Goddess",
+      "nameMl": "ദേവ-ദേവികൾ",
+      "emoji": "🛕",
       "image": "/images/cat-deity-frames.jpg"
     },
     {
-      "id": "traditional-wear",
-      "name": "Traditional Wear",
-      "nameMl": "പരമ്പരാഗത വസ്ത്രം",
-      "image": "/images/cat-traditional-wear.jpg"
+      "id": "frames-wall-art",
+      "name": "Frames & Wall Art",
+      "nameMl": "ദേവ ചിത്രങ്ങൾ",
+      "emoji": "🖼️",
+      "image": "/images/cat-deity-frames.jpg"
     },
     {
       "id": "puja-room",
       "name": "Puja Room",
       "nameMl": "പൂജ മുറി",
-      "image": null,
-      "comingSoon": true
+      "emoji": "🪔",
+      "image": null
+    },
+    {
+      "id": "incense-fragrance",
+      "name": "Incense & Fragrance",
+      "nameMl": "ധൂപം & സുഗന്ധം",
+      "emoji": "🌿",
+      "image": null
+    },
+    {
+      "id": "traditional-wear",
+      "name": "Traditional Wear",
+      "nameMl": "പരമ്പരാഗത വസ്ത്രം",
+      "emoji": "👘",
+      "image": "/images/cat-traditional-wear.jpg"
+    },
+    {
+      "id": "spiritual",
+      "name": "Spiritual",
+      "nameMl": "ആദ്ധ്യാത്മികം",
+      "emoji": "📿",
+      "image": null
     },
     {
       "id": "sacred-home",
       "name": "Sacred Home",
       "nameMl": "ഭവന ഭക്തി",
-      "image": null,
-      "comingSoon": true
+      "emoji": "🏠",
+      "image": null
     },
     {
-      "id": "gifting",
-      "name": "Gifting",
-      "nameMl": "സമ്മാനങ്ങൾ",
-      "image": null,
-      "comingSoon": true
+      "id": "books-wisdom",
+      "name": "Books & Wisdom",
+      "nameMl": "ഗ്രന്ഥങ്ങൾ",
+      "emoji": "📖",
+      "image": null
     }
   ],
   "products": [
     {
       "id": "pe-001",
       "categoryId": "puja-essentials",
-      "name": "Brass Puja Thali Set",
-      "nameMl": "ഓടു പൂജ താലം",
-      "price": 2499,
-      "description": "Complete brass thali with diya, bell, and small bowls.",
-      "image": "/images/puja-thali.jpg"
+      "name": "Kumkum – Premium Quality",
+      "nameMl": "കുങ്കുമം",
+      "price": 60,
+      "description": "Pure and vibrant red kumkum for daily puja.",
+      "image": "/images/cat-puja-essentials.jpg"
     },
     {
       "id": "pe-002",
       "categoryId": "puja-essentials",
-      "name": "Brass Diya – Single",
+      "name": "Chandan Powder",
+      "nameMl": "ചന്ദനം",
+      "price": 120,
+      "description": "Pure sandalwood powder for tilak and offerings.",
+      "image": null
+    },
+    {
+      "id": "pe-003",
+      "categoryId": "puja-essentials",
+      "name": "Vibhuti – Sacred Ash",
+      "nameMl": "വിഭൂതി",
+      "price": 80,
+      "description": "Consecrated sacred ash, traditionally made.",
+      "image": null
+    },
+    {
+      "id": "pe-004",
+      "categoryId": "puja-essentials",
+      "name": "Camphor Tablets",
+      "nameMl": "കർപ്പൂരം",
+      "price": 95,
+      "description": "100% pure camphor. 100 tablets per pack.",
+      "image": null
+    },
+    {
+      "id": "pe-005",
+      "categoryId": "puja-essentials",
+      "name": "Cotton Wicks – 100 pcs",
+      "nameMl": "തിരി",
+      "price": 50,
+      "description": "Pure cotton wicks for diyas and lamps.",
+      "image": null
+    },
+    {
+      "id": "pe-006",
+      "categoryId": "puja-essentials",
+      "name": "Pooja Sesame Oil – 500ml",
+      "nameMl": "പൂജ എണ്ണ",
+      "price": 220,
+      "description": "Pure cold-pressed sesame oil for lamps.",
+      "image": null
+    },
+    {
+      "id": "pe-007",
+      "categoryId": "puja-essentials",
+      "name": "Turmeric Powder – Pure",
+      "nameMl": "മഞ്ഞൾ",
+      "price": 90,
+      "description": "Organic turmeric for puja and skin use.",
+      "image": null
+    },
+    {
+      "id": "pe-008",
+      "categoryId": "puja-essentials",
+      "name": "Sacred Threads – Kalava",
+      "nameMl": "കളാവ് – മൗലി",
+      "price": 40,
+      "description": "Red and yellow sacred wrist threads. Pack of 5.",
+      "image": null
+    },
+    {
+      "id": "pe-009",
+      "categoryId": "puja-essentials",
+      "name": "Betel Nuts – Pooja Grade",
+      "nameMl": "അടക്ക",
+      "price": 150,
+      "description": "Whole betel nuts for offerings. 50 pcs pack.",
+      "image": null
+    },
+    {
+      "id": "pe-010",
+      "categoryId": "puja-essentials",
+      "name": "Complete Pooja Kit",
+      "nameMl": "പൂർണ്ണ പൂജ കിറ്റ്",
+      "price": 799,
+      "description": "All-in-one kit: kumkum, chandan, camphor, wicks, turmeric & more.",
+      "image": "/images/cat-puja-essentials.jpg"
+    },
+    {
+      "id": "gg-001",
+      "categoryId": "god-goddess",
+      "name": "Lord Ganesha – Brass Idol",
+      "nameMl": "ഗണേശൻ",
+      "price": 1499,
+      "description": "Handcrafted pure brass Ganesha idol. Height 6 inches.",
+      "image": null,
+      "variants": ["Small – 4 inch", "Medium – 6 inch", "Large – 9 inch"]
+    },
+    {
+      "id": "gg-002",
+      "categoryId": "god-goddess",
+      "name": "Lord Shiva – Bronze Idol",
+      "nameMl": "ശിവൻ",
+      "price": 1999,
+      "description": "Traditional Nataraja pose. Cast bronze, antique finish.",
+      "image": null,
+      "variants": ["Small – 4 inch", "Medium – 6 inch", "Large – 9 inch"]
+    },
+    {
+      "id": "gg-003",
+      "categoryId": "god-goddess",
+      "name": "Lord Krishna – Brass Idol",
+      "nameMl": "ശ്രീ കൃഷ്ണൻ",
+      "price": 1299,
+      "description": "Murali pose, pure brass with fine detailing.",
+      "image": "/images/cat-deity-frames.jpg",
+      "variants": ["Small – 4 inch", "Medium – 6 inch"]
+    },
+    {
+      "id": "gg-004",
+      "categoryId": "god-goddess",
+      "name": "Lord Vishnu – Brass Idol",
+      "nameMl": "വിഷ്ണു",
+      "price": 1799,
+      "description": "Standing Vishnu with Shankh and Chakra. Premium brass.",
+      "image": null
+    },
+    {
+      "id": "gg-005",
+      "categoryId": "god-goddess",
+      "name": "Lord Rama – Brass Idol",
+      "nameMl": "ശ്രീ രാമൻ",
+      "price": 1599,
+      "description": "Lord Rama in dhanurveda stance. Pure brass.",
+      "image": null
+    },
+    {
+      "id": "gg-006",
+      "categoryId": "god-goddess",
+      "name": "Goddess Lakshmi – Brass Idol",
+      "nameMl": "ലക്ഷ്മി",
+      "price": 1399,
+      "description": "Seated Lakshmi on lotus. Richly detailed brass idol.",
+      "image": null
+    },
+    {
+      "id": "gg-007",
+      "categoryId": "god-goddess",
+      "name": "Goddess Saraswati – Brass Idol",
+      "nameMl": "സരസ്വതി",
+      "price": 1699,
+      "description": "Veena-holding Saraswati. Fine brass craftsmanship.",
+      "image": null
+    },
+    {
+      "id": "gg-008",
+      "categoryId": "god-goddess",
+      "name": "Goddess Durga – Bronze Idol",
+      "nameMl": "ദുർഗ്ഗ",
+      "price": 2199,
+      "description": "Mahishasuramardini Durga. Cast bronze, antique finish.",
+      "image": null
+    },
+    {
+      "id": "gg-009",
+      "categoryId": "god-goddess",
+      "name": "Lord Hanuman – Brass Idol",
+      "nameMl": "ഹനുമാൻ",
+      "price": 1499,
+      "description": "Anjaneya Swami in blessing posture. Pure brass.",
+      "image": null
+    },
+    {
+      "id": "gg-010",
+      "categoryId": "god-goddess",
+      "name": "Lord Kartikeya – Brass Idol",
+      "nameMl": "കാർത്തിക്കേയൻ",
+      "price": 1899,
+      "description": "Murugan with Vel. South Indian style brass idol.",
+      "image": null
+    },
+    {
+      "id": "fw-001",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Ganesha – Framed Print",
+      "nameMl": "ഗണേശൻ ചിത്രം",
+      "description": "Premium photo print in golden ornamental wooden frame.",
+      "image": "/images/cat-deity-frames.jpg",
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-002",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Krishna – Framed Print",
+      "nameMl": "കൃഷ്ണൻ ചിത്രം",
+      "description": "Radha-Krishna devotional art in premium golden frame.",
+      "image": "/images/cat-deity-frames.jpg",
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-003",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Shiva – Framed Print",
+      "nameMl": "ശിവൻ ചിത്രം",
+      "description": "Mahadeva in meditation — premium framed devotional art.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-004",
+      "categoryId": "frames-wall-art",
+      "name": "Goddess Lakshmi – Framed Print",
+      "nameMl": "ലക്ഷ്മി ചിത്രം",
+      "description": "Goddess of prosperity — premium golden frame.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-005",
+      "categoryId": "frames-wall-art",
+      "name": "Goddess Durga – Framed Print",
+      "nameMl": "ദുർഗ്ഗ ചിത്രം",
+      "description": "Mahishasuramardini — richly framed devotional art.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-006",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Hanuman – Framed Print",
+      "nameMl": "ഹനുമാൻ ചിത്രം",
+      "description": "Bajrang Bali — premium framed print with golden border.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-007",
+      "categoryId": "frames-wall-art",
+      "name": "Om Symbol – Framed Art",
+      "nameMl": "ഓം – ഭിത്തി ചിത്രം",
+      "description": "Sacred Om in minimalist gold on cream — framed wall art.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-008",
+      "categoryId": "frames-wall-art",
+      "name": "Mantra Art – Sanskrit Print",
+      "nameMl": "മന്ത്ര കലാ ചിത്രം",
+      "description": "Beautiful Sanskrit mantra calligraphy — framed.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-009",
+      "categoryId": "frames-wall-art",
+      "name": "Traditional Indian Art – Framed",
+      "nameMl": "പരമ്പരാഗത ഭിത്തി ചിത്രം",
+      "description": "Warli / Madhubani traditional art — premium framed.",
+      "image": null,
+      "frameVariants": [
+        { "size": "A6 (10×15 cm)", "price": 199 },
+        { "size": "A5 (15×21 cm)", "price": 259 },
+        { "size": "A4 (21×30 cm)", "price": 499 }
+      ]
+    },
+    {
+      "id": "fw-p01",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Ganesha – Poster",
+      "nameMl": "ഗണേശൻ – പോസ്റ്റർ",
+      "description": "High-quality devotional poster print. Unframed.",
+      "image": "/images/cat-deity-frames.jpg",
+      "posterVariants": [
+        { "size": "A5 (15×21 cm)", "price": 49 },
+        { "size": "A4 (21×30 cm)", "price": 79 },
+        { "size": "A3 (30×42 cm)", "price": 149 }
+      ]
+    },
+    {
+      "id": "fw-p02",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Krishna – Poster",
+      "nameMl": "കൃഷ്ണൻ – പോസ്റ്റർ",
+      "description": "Radha-Krishna devotional poster print. Unframed.",
+      "image": "/images/cat-deity-frames.jpg",
+      "posterVariants": [
+        { "size": "A5 (15×21 cm)", "price": 49 },
+        { "size": "A4 (21×30 cm)", "price": 79 },
+        { "size": "A3 (30×42 cm)", "price": 149 }
+      ]
+    },
+    {
+      "id": "fw-p03",
+      "categoryId": "frames-wall-art",
+      "name": "Lord Shiva – Poster",
+      "nameMl": "ശിവൻ – പോസ്റ്റർ",
+      "description": "Mahadeva devotional poster. Premium print. Unframed.",
+      "image": null,
+      "posterVariants": [
+        { "size": "A5 (15×21 cm)", "price": 49 },
+        { "size": "A4 (21×30 cm)", "price": 79 },
+        { "size": "A3 (30×42 cm)", "price": 149 }
+      ]
+    },
+    {
+      "id": "fw-p04",
+      "categoryId": "frames-wall-art",
+      "name": "Goddess Lakshmi – Poster",
+      "nameMl": "ലക്ഷ്മി – പോസ്റ്റർ",
+      "description": "Goddess of wealth — devotional poster. Unframed.",
+      "image": null,
+      "posterVariants": [
+        { "size": "A5 (15×21 cm)", "price": 49 },
+        { "size": "A4 (21×30 cm)", "price": 79 },
+        { "size": "A3 (30×42 cm)", "price": 149 }
+      ]
+    },
+    {
+      "id": "fw-p05",
+      "categoryId": "frames-wall-art",
+      "name": "Om & Mantra – Poster",
+      "nameMl": "ഓം – പോസ്റ്റർ",
+      "description": "Sacred Om with Sanskrit blessings — art poster. Unframed.",
+      "image": null,
+      "posterVariants": [
+        { "size": "A5 (15×21 cm)", "price": 49 },
+        { "size": "A4 (21×30 cm)", "price": 79 },
+        { "size": "A3 (30×42 cm)", "price": 149 }
+      ]
+    },
+    {
+      "id": "pr-001",
+      "categoryId": "puja-room",
+      "name": "Brass Diya – Single Wick",
       "nameMl": "ഓടു ദീപം",
       "price": 350,
       "description": "Traditional single-wick brass oil lamp.",
       "image": null
     },
     {
-      "id": "pe-003",
-      "categoryId": "puja-essentials",
-      "name": "Sandalwood Incense Sticks",
-      "nameMl": "ചന്ദന അഗർബത്തി",
-      "price": 250,
-      "description": "Pure sandalwood hand-rolled incense. 20 sticks per pack.",
+      "id": "pr-002",
+      "categoryId": "puja-room",
+      "name": "Brass Diya – 5 Wick",
+      "nameMl": "ഓടു പഞ്ചദീപം",
+      "price": 699,
+      "description": "Five-wick brass lamp for aarti and festivals.",
       "image": null
     },
     {
-      "id": "df-001",
-      "categoryId": "deity-frames",
-      "name": "Lord Krishna Frame",
-      "nameMl": "ശ്രീ കൃഷ്ണൻ ചിത്രം",
-      "price": 999,
-      "description": "Premium printed photo frame with golden border.",
-      "image": "/images/krishna-frame.jpg",
-      "variants": ["A4 (21×30 cm)", "A3 (30×42 cm)"]
+      "id": "pr-003",
+      "categoryId": "puja-room",
+      "name": "Brass Vilakku – Standing Lamp",
+      "nameMl": "നിലവിളക്ക്",
+      "price": 2499,
+      "description": "Traditional Kerala nilavilakku. 24-inch height, pure brass.",
+      "image": null
     },
     {
-      "id": "df-002",
-      "categoryId": "deity-frames",
-      "name": "Lord Ganesha Frame",
-      "nameMl": "ഗണേശൻ ചിത്രം",
-      "price": 999,
-      "description": "Premium printed photo frame with golden border.",
-      "image": "/images/cat-deity-frames.jpg",
-      "variants": ["A4 (21×30 cm)", "A3 (30×42 cm)"]
+      "id": "pr-004",
+      "categoryId": "puja-room",
+      "name": "Aarti Lamp – Brass",
+      "nameMl": "ആരതി ദീപം",
+      "price": 599,
+      "description": "5-tier aarti lamp with handle. Fine brass casting.",
+      "image": null
+    },
+    {
+      "id": "pr-005",
+      "categoryId": "puja-room",
+      "name": "Brass Pooja Thali Set",
+      "nameMl": "ഓടു പൂജ താലം",
+      "price": 2499,
+      "description": "Complete set with diya, bell, small bowls. Premium brass.",
+      "image": "/images/cat-puja-essentials.jpg"
+    },
+    {
+      "id": "pr-006",
+      "categoryId": "puja-room",
+      "name": "Panchapatra & Udharini",
+      "nameMl": "പഞ്ചപാത്ര & ഉദ്ധരിണി",
+      "price": 499,
+      "description": "Traditional brass holy water vessel set.",
+      "image": null
+    },
+    {
+      "id": "pr-007",
+      "categoryId": "puja-room",
+      "name": "Brass Bell – Temple",
+      "nameMl": "ഓടു മണി",
+      "price": 399,
+      "description": "Pure brass temple bell with clear resonant sound.",
+      "image": null,
+      "variants": ["Small", "Medium", "Large"]
+    },
+    {
+      "id": "pr-008",
+      "categoryId": "puja-room",
+      "name": "Shankh – Conch Shell",
+      "nameMl": "ശംഖ്",
+      "price": 549,
+      "description": "Natural dakshinavarti shankh, cleansed and ready for puja.",
+      "image": null
+    },
+    {
+      "id": "pr-009",
+      "categoryId": "puja-room",
+      "name": "Brass Kalash",
+      "nameMl": "കലശം",
+      "price": 799,
+      "description": "Traditional mangal kalash for puja and festivals.",
+      "image": null
+    },
+    {
+      "id": "pr-010",
+      "categoryId": "puja-room",
+      "name": "Kumkum Container – Brass",
+      "nameMl": "കുങ്കുമ ഭരണി",
+      "price": 299,
+      "description": "Ornate brass kumkum box with engraved lid.",
+      "image": null
+    },
+    {
+      "id": "if-001",
+      "categoryId": "incense-fragrance",
+      "name": "Sandalwood Agarbatti",
+      "nameMl": "ചന്ദന അഗർബത്തി",
+      "price": 120,
+      "description": "Pure sandalwood hand-rolled incense. 20 sticks.",
+      "image": null
+    },
+    {
+      "id": "if-002",
+      "categoryId": "incense-fragrance",
+      "name": "Premium Rose Agarbatti",
+      "nameMl": "റോസ് അഗർബത്തി",
+      "price": 150,
+      "description": "Soft floral rose fragrance. 20 premium sticks.",
+      "image": null
+    },
+    {
+      "id": "if-003",
+      "categoryId": "incense-fragrance",
+      "name": "Dhoop Sticks – Guggul",
+      "nameMl": "ധൂപ് – ഗുഗ്ഗുൽ",
+      "price": 180,
+      "description": "Traditional Ayurvedic guggul dhoop. Purifying fragrance.",
+      "image": null
+    },
+    {
+      "id": "if-004",
+      "categoryId": "incense-fragrance",
+      "name": "Sambrani – Resin",
+      "nameMl": "സാംബ്രാണി",
+      "price": 95,
+      "description": "Pure benzoin resin for traditional home purification.",
+      "image": null
+    },
+    {
+      "id": "if-005",
+      "categoryId": "incense-fragrance",
+      "name": "Sambrani Cups",
+      "nameMl": "സാംബ്രാണി കോപ്പ",
+      "price": 80,
+      "description": "Ready-to-use sambrani cups. Pack of 10.",
+      "image": null
+    },
+    {
+      "id": "if-006",
+      "categoryId": "incense-fragrance",
+      "name": "Pure Camphor – Pooja",
+      "nameMl": "കർപ്പൂരം",
+      "price": 95,
+      "description": "100% pure edible-grade camphor. 100 tablet pack.",
+      "image": null
+    },
+    {
+      "id": "if-007",
+      "categoryId": "incense-fragrance",
+      "name": "Pooja Sesame Oil – 500ml",
+      "nameMl": "പൂജ എണ്ണ",
+      "price": 220,
+      "description": "Cold-pressed pure sesame oil. Traditional lamp oil.",
+      "image": null
+    },
+    {
+      "id": "if-008",
+      "categoryId": "incense-fragrance",
+      "name": "Jasmine Essential Oil",
+      "nameMl": "മുല്ലപ്പൂ തൈലം",
+      "price": 350,
+      "description": "Pure jasmine essential oil. 10ml.",
+      "image": null
+    },
+    {
+      "id": "if-009",
+      "categoryId": "incense-fragrance",
+      "name": "Fragrance Cones – Patchouli",
+      "nameMl": "ധൂപ കോൺ",
+      "price": 140,
+      "description": "Earthy patchouli fragrance cones. 20 per pack.",
+      "image": null
+    },
+    {
+      "id": "if-010",
+      "categoryId": "incense-fragrance",
+      "name": "Natural Loban Fragrance",
+      "nameMl": "ലോബൻ",
+      "price": 110,
+      "description": "Pure natural frankincense loban resin.",
+      "image": null
     },
     {
       "id": "tw-001",
@@ -97,17 +620,327 @@
       "nameMl": "കേരള കസവ് മുണ്ട്",
       "price": 899,
       "description": "Pure cotton with premium gold zari border.",
-      "image": "/images/traditional-mundu.jpg",
+      "image": "/images/cat-traditional-wear.jpg",
       "variants": ["Small", "Medium", "Large", "XL"]
     },
     {
       "id": "tw-002",
+      "categoryId": "traditional-wear",
+      "name": "Traditional Kurta – White",
+      "nameMl": "കുർത്ത",
+      "price": 699,
+      "description": "Premium cotton kurta for puja and festive wear.",
+      "image": null,
+      "variants": ["S", "M", "L", "XL", "XXL"]
+    },
+    {
+      "id": "tw-003",
+      "categoryId": "traditional-wear",
+      "name": "Angavastram – Silk Cotton",
+      "nameMl": "ആംഗവസ്ത്രം",
+      "price": 549,
+      "description": "Silk cotton upper cloth with gold border. Temple style.",
+      "image": null
+    },
+    {
+      "id": "tw-004",
+      "categoryId": "traditional-wear",
+      "name": "Traditional Shirt – Cotton",
+      "nameMl": "പരമ്പരാഗത ഷർട്ട്",
+      "price": 799,
+      "description": "Handwoven traditional shirt for ceremonies.",
+      "image": null,
+      "variants": ["S", "M", "L", "XL"]
+    },
+    {
+      "id": "tw-005",
+      "categoryId": "traditional-wear",
+      "name": "Mundu Set – Double",
+      "nameMl": "ഡബ്ൾ മുണ്ട് സെറ്റ്",
+      "price": 1599,
+      "description": "Kasavu double mundu with angavastram. Premium set.",
+      "image": null,
+      "variants": ["Small", "Medium", "Large", "XL"]
+    },
+    {
+      "id": "tw-006",
       "categoryId": "traditional-wear",
       "name": "Kerala Kasavu Saree",
       "nameMl": "കേരള കസവ് സാരി",
       "price": 1599,
       "description": "Authentic Kerala cotton saree with gold kasavu border.",
       "image": "/images/cat-traditional-wear.jpg"
+    },
+    {
+      "id": "tw-007",
+      "categoryId": "traditional-wear",
+      "name": "Kanjivaram Silk Saree",
+      "nameMl": "കാഞ്ചീവരം സാരി",
+      "price": 4999,
+      "description": "Pure silk Kanjivaram with traditional temple border.",
+      "image": null
+    },
+    {
+      "id": "tw-008",
+      "categoryId": "traditional-wear",
+      "name": "Traditional Dupatta – Silk",
+      "nameMl": "ദുപ്പട്ട",
+      "price": 699,
+      "description": "Pure silk dupatta with gold border for festivals.",
+      "image": null
+    },
+    {
+      "id": "tw-009",
+      "categoryId": "traditional-wear",
+      "name": "Kasavu Stole",
+      "nameMl": "കസവ് ഷാൾ",
+      "price": 449,
+      "description": "Cotton stole with gold kasavu for daily wear.",
+      "image": null
+    },
+    {
+      "id": "tw-010",
+      "categoryId": "traditional-wear",
+      "name": "Festival Wear Set",
+      "nameMl": "ഉത്സവ വേഷം",
+      "price": 2499,
+      "description": "Complete traditional festival outfit. Men / Women available.",
+      "image": null,
+      "variants": ["Men's", "Women's"]
+    },
+    {
+      "id": "sp-001",
+      "categoryId": "spiritual",
+      "name": "5-Mukhi Rudraksha Mala",
+      "nameMl": "രുദ്രാക്ഷ മാല",
+      "price": 999,
+      "description": "Authentic 5-faced rudraksha. 108 beads. Knotted.",
+      "image": null
+    },
+    {
+      "id": "sp-002",
+      "categoryId": "spiritual",
+      "name": "Tulasi Japa Mala – 108",
+      "nameMl": "തുളസി ജപമാല",
+      "price": 350,
+      "description": "Sacred tulsi wood mala. 108 beads for japa.",
+      "image": null
+    },
+    {
+      "id": "sp-003",
+      "categoryId": "spiritual",
+      "name": "Sandalwood Japa Mala",
+      "nameMl": "ചന്ദന ജപമാല",
+      "price": 599,
+      "description": "Pure sandalwood 108-bead mala, knotted between beads.",
+      "image": null
+    },
+    {
+      "id": "sp-004",
+      "categoryId": "spiritual",
+      "name": "Sphatik Crystal Mala",
+      "nameMl": "സ്ഫടിക മാല",
+      "price": 1299,
+      "description": "Natural clear quartz sphatik crystal mala. 108 beads.",
+      "image": null
+    },
+    {
+      "id": "sp-005",
+      "categoryId": "spiritual",
+      "name": "Rudraksha Bracelet",
+      "nameMl": "രുദ്രാക്ഷ ബ്രേസ്‌ലെറ്റ്",
+      "price": 299,
+      "description": "5-Mukhi rudraksha wrist mala. Elastic band.",
+      "image": null
+    },
+    {
+      "id": "sp-006",
+      "categoryId": "spiritual",
+      "name": "Karungali Bracelet",
+      "nameMl": "കരുങ്കാലി ബ്രേസ്‌ലെറ്റ്",
+      "price": 199,
+      "description": "Sacred ebony wood bracelet for protection.",
+      "image": null
+    },
+    {
+      "id": "sp-007",
+      "categoryId": "spiritual",
+      "name": "Shri Yantra – Copper",
+      "nameMl": "ശ്രീ യന്ത്രം",
+      "price": 799,
+      "description": "Energised copper Shri Yantra for prosperity.",
+      "image": null
+    },
+    {
+      "id": "sp-008",
+      "categoryId": "spiritual",
+      "name": "Meditation Cushion",
+      "nameMl": "ധ്യാന ആസനം",
+      "price": 599,
+      "description": "Comfortable round cotton meditation cushion.",
+      "image": null
+    },
+    {
+      "id": "sp-009",
+      "categoryId": "spiritual",
+      "name": "Japamala Bag – Embroidered",
+      "nameMl": "ജപ മാല ബാഗ്",
+      "price": 150,
+      "description": "Hand-embroidered cotton bag to hold japamala.",
+      "image": null
+    },
+    {
+      "id": "sp-010",
+      "categoryId": "spiritual",
+      "name": "Spiritual Silver Pendant",
+      "nameMl": "ആദ്ധ്യാത്മിക ലോക്കറ്റ്",
+      "price": 1499,
+      "description": "925 silver Om / Ganesha pendant with black cord.",
+      "image": null
+    },
+    {
+      "id": "sh-001",
+      "categoryId": "sacred-home",
+      "name": "Ganesha – Brass Décor Idol",
+      "nameMl": "ഗണേശ ഭവന ഭക്തി",
+      "price": 1299,
+      "description": "Decorative Ganesha for home entrance. Pure brass.",
+      "image": null
+    },
+    {
+      "id": "sh-002",
+      "categoryId": "sacred-home",
+      "name": "Krishna – Home Décor",
+      "nameMl": "കൃഷ്ണ ഭവന ഭക്തി",
+      "price": 1499,
+      "description": "Makhan chor Krishna — perfect home altar piece.",
+      "image": null
+    },
+    {
+      "id": "sh-003",
+      "categoryId": "sacred-home",
+      "name": "Nataraja – Bronze Décor",
+      "nameMl": "നടരാജ ഭക്തി",
+      "price": 2999,
+      "description": "Classic Nataraja dancing Shiva in antique bronze.",
+      "image": null
+    },
+    {
+      "id": "sh-004",
+      "categoryId": "sacred-home",
+      "name": "Wooden Ganesha – Carved",
+      "nameMl": "തടി ഗണേശൻ",
+      "price": 1799,
+      "description": "Hand-carved teak wood Ganesha idol.",
+      "image": null
+    },
+    {
+      "id": "sh-005",
+      "categoryId": "sacred-home",
+      "name": "Lakshmi – Brass Décor",
+      "nameMl": "ലക്ഷ്മി ഭക്തി",
+      "price": 1599,
+      "description": "Lotus Lakshmi — for home shrine and décor.",
+      "image": null
+    },
+    {
+      "id": "sh-006",
+      "categoryId": "sacred-home",
+      "name": "Traditional Oil Lamp – Brass",
+      "nameMl": "ഓടു നിലവിളക്ക്",
+      "price": 1999,
+      "description": "Decorative multi-wick standing lamp for home.",
+      "image": null
+    },
+    {
+      "id": "sh-007",
+      "categoryId": "sacred-home",
+      "name": "Temple Bell – Décor",
+      "nameMl": "ക്ഷേത്ര മണി – ഡെക്കർ",
+      "price": 499,
+      "description": "Wall-hanging brass temple bell for home entrance.",
+      "image": null
+    },
+    {
+      "id": "sh-008",
+      "categoryId": "sacred-home",
+      "name": "Spiritual Wall Décor – Brass",
+      "nameMl": "ഭക്തി ഭിത്തി ഡെക്കർ",
+      "price": 1299,
+      "description": "Om and lotus motif brass wall hanging.",
+      "image": null
+    },
+    {
+      "id": "bw-001",
+      "categoryId": "books-wisdom",
+      "name": "Bhagavad Gita – Hardcover",
+      "nameMl": "ഭഗവദ്ഗീത",
+      "price": 499,
+      "description": "Sanskrit + English with commentary. Premium hardcover.",
+      "image": null
+    },
+    {
+      "id": "bw-002",
+      "categoryId": "books-wisdom",
+      "name": "Ramayana – Illustrated",
+      "nameMl": "രാമായണം",
+      "price": 699,
+      "description": "Illustrated Valmiki Ramayana. Malayalam / English.",
+      "image": null
+    },
+    {
+      "id": "bw-003",
+      "categoryId": "books-wisdom",
+      "name": "Mahabharata – Condensed",
+      "nameMl": "മഹാഭാരതം",
+      "price": 849,
+      "description": "Complete condensed Mahabharata in simple language.",
+      "image": null
+    },
+    {
+      "id": "bw-004",
+      "categoryId": "books-wisdom",
+      "name": "Upanishads – Key Texts",
+      "nameMl": "ഉപനിഷദ്",
+      "price": 599,
+      "description": "Major Upanishads with translation and commentary.",
+      "image": null
+    },
+    {
+      "id": "bw-005",
+      "categoryId": "books-wisdom",
+      "name": "Puranas – Selected Stories",
+      "nameMl": "പുരാണം",
+      "price": 549,
+      "description": "Engaging stories from the major Puranas.",
+      "image": null
+    },
+    {
+      "id": "bw-006",
+      "categoryId": "books-wisdom",
+      "name": "Yoga Philosophy – Beginner",
+      "nameMl": "യോഗ തത്ത്വം",
+      "price": 399,
+      "description": "Simple introduction to Yoga Sutras of Patanjali.",
+      "image": null
+    },
+    {
+      "id": "bw-007",
+      "categoryId": "books-wisdom",
+      "name": "Hindu Mythology – Stories",
+      "nameMl": "ഹിന്ദു പുരാണ കഥകൾ",
+      "price": 350,
+      "description": "Beautiful retelling of Hindu mythology for all ages.",
+      "image": null
+    },
+    {
+      "id": "bw-008",
+      "categoryId": "books-wisdom",
+      "name": "Advaita Vedanta – Shankara",
+      "nameMl": "അദ്വൈത വേദാന്തം",
+      "price": 499,
+      "description": "Adi Shankaracharya's Advaita — translated and explained.",
+      "image": null
     }
   ]
 }
