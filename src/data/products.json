@@ -7,69 +7,79 @@
       "name": "Puja Essentials",
       "nameMl": "പൂജ ഉപകരണങ്ങൾ",
       "emoji": "🪔",
-      "image": "/images/cat-puja-essentials.jpg"
+      "image": "/images/cat-puja-essentials.jpg",
+      "subCollections": ["All", "Powders & Ingredients", "Lamps & Oils", "Kits & Sets"]
     },
     {
       "id": "god-goddess",
       "name": "God & Goddess",
       "nameMl": "ദേവ-ദേവികൾ",
       "emoji": "🛕",
-      "image": "/images/cat-deity-frames.jpg"
+      "image": "/images/cat-deity-frames.jpg",
+      "subCollections": ["All", "Brass Idols", "Bronze Idols"]
     },
     {
       "id": "frames-wall-art",
       "name": "Frames & Wall Art",
       "nameMl": "ദേവ ചിത്രങ്ങൾ",
       "emoji": "🖼️",
-      "image": "/images/cat-deity-frames.jpg"
+      "image": "/images/cat-deity-frames.jpg",
+      "subCollections": ["All", "Framed Prints", "Posters"]
     },
     {
       "id": "puja-room",
       "name": "Puja Room",
       "nameMl": "പൂജ മുറി",
       "emoji": "🪔",
-      "image": null
+      "image": null,
+      "subCollections": ["All", "Lamps & Diyas", "Vessels & Utensils", "Bells & Accessories"]
     },
     {
       "id": "incense-fragrance",
       "name": "Incense & Fragrance",
       "nameMl": "ധൂപം & സുഗന്ധം",
       "emoji": "🌿",
-      "image": null
+      "image": null,
+      "subCollections": ["All", "Agarbatti & Sticks", "Resins & Dhoop", "Oils & Cones"]
     },
     {
       "id": "traditional-wear",
       "name": "Traditional Wear",
       "nameMl": "പരമ്പരാഗത വസ്ത്രം",
       "emoji": "👘",
-      "image": "/images/cat-traditional-wear.jpg"
+      "image": "/images/cat-traditional-wear.jpg",
+      "subCollections": ["All", "Men's Wear", "Women's Wear", "Accessories"]
     },
     {
       "id": "spiritual",
       "name": "Spiritual",
       "nameMl": "ആദ്ധ്യാത്മികം",
       "emoji": "📿",
-      "image": null
+      "image": null,
+      "subCollections": ["All", "Malas & Bracelets", "Yantras & Tools", "Meditation"]
     },
     {
       "id": "sacred-home",
       "name": "Sacred Home",
       "nameMl": "ഭവന ഭക്തി",
       "emoji": "🏠",
-      "image": null
+      "image": null,
+      "subCollections": ["All", "Décor Idols", "Lamps & Bells", "Wall Décor"]
     },
     {
       "id": "books-wisdom",
       "name": "Books & Wisdom",
       "nameMl": "ഗ്രന്ഥങ്ങൾ",
       "emoji": "📖",
-      "image": null
+      "image": null,
+      "subCollections": ["All", "Scriptures & Epics", "Philosophy & Yoga", "Mythology"]
     }
   ],
   "products": [
     {
       "id": "pe-001",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Kumkum – Premium Quality",
       "nameMl": "കുങ്കുമം",
       "price": 60,
@@ -79,6 +89,7 @@
     {
       "id": "pe-002",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Chandan Powder",
       "nameMl": "ചന്ദനം",
       "price": 120,
@@ -88,6 +99,7 @@
     {
       "id": "pe-003",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Vibhuti – Sacred Ash",
       "nameMl": "വിഭൂതി",
       "price": 80,
@@ -97,6 +109,7 @@
     {
       "id": "pe-004",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Camphor Tablets",
       "nameMl": "കർപ്പൂരം",
       "price": 95,
@@ -106,6 +119,7 @@
     {
       "id": "pe-005",
       "categoryId": "puja-essentials",
+      "subCollection": "Lamps & Oils",
       "name": "Cotton Wicks – 100 pcs",
       "nameMl": "തിരി",
       "price": 50,
@@ -115,6 +129,7 @@
     {
       "id": "pe-006",
       "categoryId": "puja-essentials",
+      "subCollection": "Lamps & Oils",
       "name": "Pooja Sesame Oil – 500ml",
       "nameMl": "പൂജ എണ്ണ",
       "price": 220,
@@ -124,6 +139,7 @@
     {
       "id": "pe-007",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Turmeric Powder – Pure",
       "nameMl": "മഞ്ഞൾ",
       "price": 90,
@@ -133,6 +149,7 @@
     {
       "id": "pe-008",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Sacred Threads – Kalava",
       "nameMl": "കളാവ് – മൗലി",
       "price": 40,
@@ -142,6 +159,7 @@
     {
       "id": "pe-009",
       "categoryId": "puja-essentials",
+      "subCollection": "Powders & Ingredients",
       "name": "Betel Nuts – Pooja Grade",
       "nameMl": "അടക്ക",
       "price": 150,
@@ -151,6 +169,7 @@
     {
       "id": "pe-010",
       "categoryId": "puja-essentials",
+      "subCollection": "Kits & Sets",
       "name": "Complete Pooja Kit",
       "nameMl": "പൂർണ്ണ പൂജ കിറ്റ്",
       "price": 799,
@@ -160,6 +179,7 @@
     {
       "id": "gg-001",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Ganesha – Brass Idol",
       "nameMl": "ഗണേശൻ",
       "price": 1499,
@@ -170,6 +190,7 @@
     {
       "id": "gg-002",
       "categoryId": "god-goddess",
+      "subCollection": "Bronze Idols",
       "name": "Lord Shiva – Bronze Idol",
       "nameMl": "ശിവൻ",
       "price": 1999,
@@ -180,6 +201,7 @@
     {
       "id": "gg-003",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Krishna – Brass Idol",
       "nameMl": "ശ്രീ കൃഷ്ണൻ",
       "price": 1299,
@@ -190,6 +212,7 @@
     {
       "id": "gg-004",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Vishnu – Brass Idol",
       "nameMl": "വിഷ്ണു",
       "price": 1799,
@@ -199,6 +222,7 @@
     {
       "id": "gg-005",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Rama – Brass Idol",
       "nameMl": "ശ്രീ രാമൻ",
       "price": 1599,
@@ -208,6 +232,7 @@
     {
       "id": "gg-006",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Goddess Lakshmi – Brass Idol",
       "nameMl": "ലക്ഷ്മി",
       "price": 1399,
@@ -217,6 +242,7 @@
     {
       "id": "gg-007",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Goddess Saraswati – Brass Idol",
       "nameMl": "സരസ്വതി",
       "price": 1699,
@@ -226,6 +252,7 @@
     {
       "id": "gg-008",
       "categoryId": "god-goddess",
+      "subCollection": "Bronze Idols",
       "name": "Goddess Durga – Bronze Idol",
       "nameMl": "ദുർഗ്ഗ",
       "price": 2199,
@@ -235,6 +262,7 @@
     {
       "id": "gg-009",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Hanuman – Brass Idol",
       "nameMl": "ഹനുമാൻ",
       "price": 1499,
@@ -244,6 +272,7 @@
     {
       "id": "gg-010",
       "categoryId": "god-goddess",
+      "subCollection": "Brass Idols",
       "name": "Lord Kartikeya – Brass Idol",
       "nameMl": "കാർത്തിക്കേയൻ",
       "price": 1899,
@@ -253,6 +282,7 @@
     {
       "id": "fw-001",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Lord Ganesha – Framed Print",
       "nameMl": "ഗണേശൻ ചിത്രം",
       "description": "Premium photo print in golden ornamental wooden frame.",
@@ -266,6 +296,7 @@
     {
       "id": "fw-002",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Lord Krishna – Framed Print",
       "nameMl": "കൃഷ്ണൻ ചിത്രം",
       "description": "Radha-Krishna devotional art in premium golden frame.",
@@ -279,6 +310,7 @@
     {
       "id": "fw-003",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Lord Shiva – Framed Print",
       "nameMl": "ശിവൻ ചിത്രം",
       "description": "Mahadeva in meditation — premium framed devotional art.",
@@ -292,6 +324,7 @@
     {
       "id": "fw-004",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Goddess Lakshmi – Framed Print",
       "nameMl": "ലക്ഷ്മി ചിത്രം",
       "description": "Goddess of prosperity — premium golden frame.",
@@ -305,6 +338,7 @@
     {
       "id": "fw-005",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Goddess Durga – Framed Print",
       "nameMl": "ദുർഗ്ഗ ചിത്രം",
       "description": "Mahishasuramardini — richly framed devotional art.",
@@ -318,6 +352,7 @@
     {
       "id": "fw-006",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Lord Hanuman – Framed Print",
       "nameMl": "ഹനുമാൻ ചിത്രം",
       "description": "Bajrang Bali — premium framed print with golden border.",
@@ -331,6 +366,7 @@
     {
       "id": "fw-007",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Om Symbol – Framed Art",
       "nameMl": "ഓം – ഭിത്തി ചിത്രം",
       "description": "Sacred Om in minimalist gold on cream — framed wall art.",
@@ -344,6 +380,7 @@
     {
       "id": "fw-008",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Mantra Art – Sanskrit Print",
       "nameMl": "മന്ത്ര കലാ ചിത്രം",
       "description": "Beautiful Sanskrit mantra calligraphy — framed.",
@@ -357,6 +394,7 @@
     {
       "id": "fw-009",
       "categoryId": "frames-wall-art",
+      "subCollection": "Framed Prints",
       "name": "Traditional Indian Art – Framed",
       "nameMl": "പരമ്പരാഗത ഭിത്തി ചിത്രം",
       "description": "Warli / Madhubani traditional art — premium framed.",
@@ -370,6 +408,7 @@
     {
       "id": "fw-p01",
       "categoryId": "frames-wall-art",
+      "subCollection": "Posters",
       "name": "Lord Ganesha – Poster",
       "nameMl": "ഗണേശൻ – പോസ്റ്റർ",
       "description": "High-quality devotional poster print. Unframed.",
@@ -383,6 +422,7 @@
     {
       "id": "fw-p02",
       "categoryId": "frames-wall-art",
+      "subCollection": "Posters",
       "name": "Lord Krishna – Poster",
       "nameMl": "കൃഷ്ണൻ – പോസ്റ്റർ",
       "description": "Radha-Krishna devotional poster print. Unframed.",
@@ -396,6 +436,7 @@
     {
       "id": "fw-p03",
       "categoryId": "frames-wall-art",
+      "subCollection": "Posters",
       "name": "Lord Shiva – Poster",
       "nameMl": "ശിവൻ – പോസ്റ്റർ",
       "description": "Mahadeva devotional poster. Premium print. Unframed.",
@@ -409,6 +450,7 @@
     {
       "id": "fw-p04",
       "categoryId": "frames-wall-art",
+      "subCollection": "Posters",
       "name": "Goddess Lakshmi – Poster",
       "nameMl": "ലക്ഷ്മി – പോസ്റ്റർ",
       "description": "Goddess of wealth — devotional poster. Unframed.",
@@ -422,6 +464,7 @@
     {
       "id": "fw-p05",
       "categoryId": "frames-wall-art",
+      "subCollection": "Posters",
       "name": "Om & Mantra – Poster",
       "nameMl": "ഓം – പോസ്റ്റർ",
       "description": "Sacred Om with Sanskrit blessings — art poster. Unframed.",
@@ -435,6 +478,7 @@
     {
       "id": "pr-001",
       "categoryId": "puja-room",
+      "subCollection": "Lamps & Diyas",
       "name": "Brass Diya – Single Wick",
       "nameMl": "ഓടു ദീപം",
       "price": 350,
@@ -444,6 +488,7 @@
     {
       "id": "pr-002",
       "categoryId": "puja-room",
+      "subCollection": "Lamps & Diyas",
       "name": "Brass Diya – 5 Wick",
       "nameMl": "ഓടു പഞ്ചദീപം",
       "price": 699,
@@ -453,6 +498,7 @@
     {
       "id": "pr-003",
       "categoryId": "puja-room",
+      "subCollection": "Lamps & Diyas",
       "name": "Brass Vilakku – Standing Lamp",
       "nameMl": "നിലവിളക്ക്",
       "price": 2499,
@@ -462,6 +508,7 @@
     {
       "id": "pr-004",
       "categoryId": "puja-room",
+      "subCollection": "Lamps & Diyas",
       "name": "Aarti Lamp – Brass",
       "nameMl": "ആരതി ദീപം",
       "price": 599,
@@ -471,6 +518,7 @@
     {
       "id": "pr-005",
       "categoryId": "puja-room",
+      "subCollection": "Vessels & Utensils",
       "name": "Brass Pooja Thali Set",
       "nameMl": "ഓടു പൂജ താലം",
       "price": 2499,
@@ -480,6 +528,7 @@
     {
       "id": "pr-006",
       "categoryId": "puja-room",
+      "subCollection": "Vessels & Utensils",
       "name": "Panchapatra & Udharini",
       "nameMl": "പഞ്ചപാത്ര & ഉദ്ധരിണി",
       "price": 499,
@@ -489,6 +538,7 @@
     {
       "id": "pr-007",
       "categoryId": "puja-room",
+      "subCollection": "Bells & Accessories",
       "name": "Brass Bell – Temple",
       "nameMl": "ഓടു മണി",
       "price": 399,
@@ -499,6 +549,7 @@
     {
       "id": "pr-008",
       "categoryId": "puja-room",
+      "subCollection": "Bells & Accessories",
       "name": "Shankh – Conch Shell",
       "nameMl": "ശംഖ്",
       "price": 549,
@@ -508,6 +559,7 @@
     {
       "id": "pr-009",
       "categoryId": "puja-room",
+      "subCollection": "Vessels & Utensils",
       "name": "Brass Kalash",
       "nameMl": "കലശം",
       "price": 799,
@@ -517,6 +569,7 @@
     {
       "id": "pr-010",
       "categoryId": "puja-room",
+      "subCollection": "Vessels & Utensils",
       "name": "Kumkum Container – Brass",
       "nameMl": "കുങ്കുമ ഭരണി",
       "price": 299,
@@ -526,6 +579,7 @@
     {
       "id": "if-001",
       "categoryId": "incense-fragrance",
+      "subCollection": "Agarbatti & Sticks",
       "name": "Sandalwood Agarbatti",
       "nameMl": "ചന്ദന അഗർബത്തി",
       "price": 120,
@@ -535,6 +589,7 @@
     {
       "id": "if-002",
       "categoryId": "incense-fragrance",
+      "subCollection": "Agarbatti & Sticks",
       "name": "Premium Rose Agarbatti",
       "nameMl": "റോസ് അഗർബത്തി",
       "price": 150,
@@ -544,6 +599,7 @@
     {
       "id": "if-003",
       "categoryId": "incense-fragrance",
+      "subCollection": "Resins & Dhoop",
       "name": "Dhoop Sticks – Guggul",
       "nameMl": "ധൂപ് – ഗുഗ്ഗുൽ",
       "price": 180,
@@ -553,6 +609,7 @@
     {
       "id": "if-004",
       "categoryId": "incense-fragrance",
+      "subCollection": "Resins & Dhoop",
       "name": "Sambrani – Resin",
       "nameMl": "സാംബ്രാണി",
       "price": 95,
@@ -562,6 +619,7 @@
     {
       "id": "if-005",
       "categoryId": "incense-fragrance",
+      "subCollection": "Resins & Dhoop",
       "name": "Sambrani Cups",
       "nameMl": "സാംബ്രാണി കോപ്പ",
       "price": 80,
@@ -571,6 +629,7 @@
     {
       "id": "if-006",
       "categoryId": "incense-fragrance",
+      "subCollection": "Resins & Dhoop",
       "name": "Pure Camphor – Pooja",
       "nameMl": "കർപ്പൂരം",
       "price": 95,
@@ -580,6 +639,7 @@
     {
       "id": "if-007",
       "categoryId": "incense-fragrance",
+      "subCollection": "Oils & Cones",
       "name": "Pooja Sesame Oil – 500ml",
       "nameMl": "പൂജ എണ്ണ",
       "price": 220,
@@ -589,6 +649,7 @@
     {
       "id": "if-008",
       "categoryId": "incense-fragrance",
+      "subCollection": "Oils & Cones",
       "name": "Jasmine Essential Oil",
       "nameMl": "മുല്ലപ്പൂ തൈലം",
       "price": 350,
@@ -598,6 +659,7 @@
     {
       "id": "if-009",
       "categoryId": "incense-fragrance",
+      "subCollection": "Oils & Cones",
       "name": "Fragrance Cones – Patchouli",
       "nameMl": "ധൂപ കോൺ",
       "price": 140,
@@ -607,6 +669,7 @@
     {
       "id": "if-010",
       "categoryId": "incense-fragrance",
+      "subCollection": "Resins & Dhoop",
       "name": "Natural Loban Fragrance",
       "nameMl": "ലോബൻ",
       "price": 110,
@@ -616,6 +679,7 @@
     {
       "id": "tw-001",
       "categoryId": "traditional-wear",
+      "subCollection": "Men's Wear",
       "name": "Kerala Kasavu Mundu",
       "nameMl": "കേരള കസവ് മുണ്ട്",
       "price": 899,
@@ -626,6 +690,7 @@
     {
       "id": "tw-002",
       "categoryId": "traditional-wear",
+      "subCollection": "Men's Wear",
       "name": "Traditional Kurta – White",
       "nameMl": "കുർത്ത",
       "price": 699,
@@ -636,6 +701,7 @@
     {
       "id": "tw-003",
       "categoryId": "traditional-wear",
+      "subCollection": "Accessories",
       "name": "Angavastram – Silk Cotton",
       "nameMl": "ആംഗവസ്ത്രം",
       "price": 549,
@@ -645,6 +711,7 @@
     {
       "id": "tw-004",
       "categoryId": "traditional-wear",
+      "subCollection": "Men's Wear",
       "name": "Traditional Shirt – Cotton",
       "nameMl": "പരമ്പരാഗത ഷർട്ട്",
       "price": 799,
@@ -655,6 +722,7 @@
     {
       "id": "tw-005",
       "categoryId": "traditional-wear",
+      "subCollection": "Men's Wear",
       "name": "Mundu Set – Double",
       "nameMl": "ഡബ്ൾ മുണ്ട് സെറ്റ്",
       "price": 1599,
@@ -665,6 +733,7 @@
     {
       "id": "tw-006",
       "categoryId": "traditional-wear",
+      "subCollection": "Women's Wear",
       "name": "Kerala Kasavu Saree",
       "nameMl": "കേരള കസവ് സാരി",
       "price": 1599,
@@ -674,6 +743,7 @@
     {
       "id": "tw-007",
       "categoryId": "traditional-wear",
+      "subCollection": "Women's Wear",
       "name": "Kanjivaram Silk Saree",
       "nameMl": "കാഞ്ചീവരം സാരി",
       "price": 4999,
@@ -683,6 +753,7 @@
     {
       "id": "tw-008",
       "categoryId": "traditional-wear",
+      "subCollection": "Women's Wear",
       "name": "Traditional Dupatta – Silk",
       "nameMl": "ദുപ്പട്ട",
       "price": 699,
@@ -692,6 +763,7 @@
     {
       "id": "tw-009",
       "categoryId": "traditional-wear",
+      "subCollection": "Accessories",
       "name": "Kasavu Stole",
       "nameMl": "കസവ് ഷാൾ",
       "price": 449,
@@ -701,6 +773,7 @@
     {
       "id": "tw-010",
       "categoryId": "traditional-wear",
+      "subCollection": "Accessories",
       "name": "Festival Wear Set",
       "nameMl": "ഉത്സവ വേഷം",
       "price": 2499,
@@ -711,6 +784,7 @@
     {
       "id": "sp-001",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "5-Mukhi Rudraksha Mala",
       "nameMl": "രുദ്രാക്ഷ മാല",
       "price": 999,
@@ -720,6 +794,7 @@
     {
       "id": "sp-002",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "Tulasi Japa Mala – 108",
       "nameMl": "തുളസി ജപമാല",
       "price": 350,
@@ -729,6 +804,7 @@
     {
       "id": "sp-003",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "Sandalwood Japa Mala",
       "nameMl": "ചന്ദന ജപമാല",
       "price": 599,
@@ -738,6 +814,7 @@
     {
       "id": "sp-004",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "Sphatik Crystal Mala",
       "nameMl": "സ്ഫടിക മാല",
       "price": 1299,
@@ -747,6 +824,7 @@
     {
       "id": "sp-005",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "Rudraksha Bracelet",
       "nameMl": "രുദ്രാക്ഷ ബ്രേസ്‌ലെറ്റ്",
       "price": 299,
@@ -756,6 +834,7 @@
     {
       "id": "sp-006",
       "categoryId": "spiritual",
+      "subCollection": "Malas & Bracelets",
       "name": "Karungali Bracelet",
       "nameMl": "കരുങ്കാലി ബ്രേസ്‌ലെറ്റ്",
       "price": 199,
@@ -765,6 +844,7 @@
     {
       "id": "sp-007",
       "categoryId": "spiritual",
+      "subCollection": "Yantras & Tools",
       "name": "Shri Yantra – Copper",
       "nameMl": "ശ്രീ യന്ത്രം",
       "price": 799,
@@ -774,6 +854,7 @@
     {
       "id": "sp-008",
       "categoryId": "spiritual",
+      "subCollection": "Meditation",
       "name": "Meditation Cushion",
       "nameMl": "ധ്യാന ആസനം",
       "price": 599,
@@ -783,6 +864,7 @@
     {
       "id": "sp-009",
       "categoryId": "spiritual",
+      "subCollection": "Meditation",
       "name": "Japamala Bag – Embroidered",
       "nameMl": "ജപ മാല ബാഗ്",
       "price": 150,
@@ -792,6 +874,7 @@
     {
       "id": "sp-010",
       "categoryId": "spiritual",
+      "subCollection": "Yantras & Tools",
       "name": "Spiritual Silver Pendant",
       "nameMl": "ആദ്ധ്യാത്മിക ലോക്കറ്റ്",
       "price": 1499,
@@ -801,6 +884,7 @@
     {
       "id": "sh-001",
       "categoryId": "sacred-home",
+      "subCollection": "Décor Idols",
       "name": "Ganesha – Brass Décor Idol",
       "nameMl": "ഗണേശ ഭവന ഭക്തി",
       "price": 1299,
@@ -810,6 +894,7 @@
     {
       "id": "sh-002",
       "categoryId": "sacred-home",
+      "subCollection": "Décor Idols",
       "name": "Krishna – Home Décor",
       "nameMl": "കൃഷ്ണ ഭവന ഭക്തി",
       "price": 1499,
@@ -819,6 +904,7 @@
     {
       "id": "sh-003",
       "categoryId": "sacred-home",
+      "subCollection": "Décor Idols",
       "name": "Nataraja – Bronze Décor",
       "nameMl": "നടരാജ ഭക്തി",
       "price": 2999,
@@ -828,6 +914,7 @@
     {
       "id": "sh-004",
       "categoryId": "sacred-home",
+      "subCollection": "Décor Idols",
       "name": "Wooden Ganesha – Carved",
       "nameMl": "തടി ഗണേശൻ",
       "price": 1799,
@@ -837,6 +924,7 @@
     {
       "id": "sh-005",
       "categoryId": "sacred-home",
+      "subCollection": "Décor Idols",
       "name": "Lakshmi – Brass Décor",
       "nameMl": "ലക്ഷ്മി ഭക്തി",
       "price": 1599,
@@ -846,6 +934,7 @@
     {
       "id": "sh-006",
       "categoryId": "sacred-home",
+      "subCollection": "Lamps & Bells",
       "name": "Traditional Oil Lamp – Brass",
       "nameMl": "ഓടു നിലവിളക്ക്",
       "price": 1999,
@@ -855,6 +944,7 @@
     {
       "id": "sh-007",
       "categoryId": "sacred-home",
+      "subCollection": "Lamps & Bells",
       "name": "Temple Bell – Décor",
       "nameMl": "ക്ഷേത്ര മണി – ഡെക്കർ",
       "price": 499,
@@ -864,6 +954,7 @@
     {
       "id": "sh-008",
       "categoryId": "sacred-home",
+      "subCollection": "Wall Décor",
       "name": "Spiritual Wall Décor – Brass",
       "nameMl": "ഭക്തി ഭിത്തി ഡെക്കർ",
       "price": 1299,
@@ -873,6 +964,7 @@
     {
       "id": "bw-001",
       "categoryId": "books-wisdom",
+      "subCollection": "Scriptures & Epics",
       "name": "Bhagavad Gita – Hardcover",
       "nameMl": "ഭഗവദ്ഗീത",
       "price": 499,
@@ -882,6 +974,7 @@
     {
       "id": "bw-002",
       "categoryId": "books-wisdom",
+      "subCollection": "Scriptures & Epics",
       "name": "Ramayana – Illustrated",
       "nameMl": "രാമായണം",
       "price": 699,
@@ -891,6 +984,7 @@
     {
       "id": "bw-003",
       "categoryId": "books-wisdom",
+      "subCollection": "Scriptures & Epics",
       "name": "Mahabharata – Condensed",
       "nameMl": "മഹാഭാരതം",
       "price": 849,
@@ -900,6 +994,7 @@
     {
       "id": "bw-004",
       "categoryId": "books-wisdom",
+      "subCollection": "Philosophy & Yoga",
       "name": "Upanishads – Key Texts",
       "nameMl": "ഉപനിഷദ്",
       "price": 599,
@@ -909,6 +1004,7 @@
     {
       "id": "bw-005",
       "categoryId": "books-wisdom",
+      "subCollection": "Mythology",
       "name": "Puranas – Selected Stories",
       "nameMl": "പുരാണം",
       "price": 549,
@@ -918,6 +1014,7 @@
     {
       "id": "bw-006",
       "categoryId": "books-wisdom",
+      "subCollection": "Philosophy & Yoga",
       "name": "Yoga Philosophy – Beginner",
       "nameMl": "യോഗ തത്ത്വം",
       "price": 399,
@@ -927,6 +1024,7 @@
     {
       "id": "bw-007",
       "categoryId": "books-wisdom",
+      "subCollection": "Mythology",
       "name": "Hindu Mythology – Stories",
       "nameMl": "ഹിന്ദു പുരാണ കഥകൾ",
       "price": 350,
@@ -936,6 +1034,7 @@
     {
       "id": "bw-008",
       "categoryId": "books-wisdom",
+      "subCollection": "Philosophy & Yoga",
       "name": "Advaita Vedanta – Shankara",
       "nameMl": "അദ്വൈത വേദാന്തം",
       "price": 499,

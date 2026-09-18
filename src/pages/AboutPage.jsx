@@ -15,19 +15,17 @@ const WA_ICON = (
   </svg>
 );
 
-export default function AboutPage({ setPage }) {
+export default function AboutPage() {
   const lang = useContext(LangContext);
 
   useEffect(() => {
-    setPage('about');
     window.scrollTo(0, 0);
-  }, [setPage]);
+  }, []);
 
   const waUrl = `https://wa.me/${data.whatsappNumber}?text=${encodeURIComponent('Hi Anandha Bodhi, I have a question.')}`;
 
   return (
-    <div className="page-wrapper">
-      <div className="about-page">
+    <div className="about-page">
         <h2>{lang === 'ml' ? 'ഞങ്ങളെ കുറിച്ച്' : 'About Us'}</h2>
         <p>
           {lang === 'ml'
@@ -73,7 +71,6 @@ export default function AboutPage({ setPage }) {
             </span>
           </div>
         </div>
-      </div>
     </div>
   );
 }

@@ -1,28 +1,65 @@
 import React, { useState, useContext } from 'react';
-import data from '../data/products.json';
 import { LangContext } from '../App.jsx';
+import { useCart } from '../context/CartContext.jsx';
 
-const WA_ICON = (
-  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.201.535 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.666.596 1.216.78 1.39.866.173.086.275.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824z"/>
-    <path d="M20.52 3.449C18.24 1.245 15.24 0 12.045 0 5.463 0 .104 5.334.101 11.893c0 2.096.549 4.14 1.595 5.945L0 24l6.335-1.652c1.746.943 3.71 1.444 5.71 1.447h.006c6.585 0 11.946-5.336 11.949-11.896 0-3.176-1.24-6.165-3.48-8.45zM12.045 21.785h-.005c-1.774 0-3.513-.474-5.031-1.37l-.36-.214-3.742.975.999-3.648-.235-.374a9.86 9.86 0 01-1.511-5.26c.001-5.45 4.436-9.884 9.892-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.888 9.884z"/>
+const CART_ICON = (
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.96-1.61L23 6H6"/>
   </svg>
 );
 
+const CHECK_ICON = (
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="20 6 9 17 4 12"/>
+  </svg>
+);
+
+// Get the effective price for a product (handles frameVariants, posterVariants, or plain price)
+function getEffectivePrice(product, variant) {
+  if (variant && product.frameVariants) {
+    const fv = product.frameVariants.find((v) => v.size === variant);
+    if (fv) return fv.price;
+    return product.frameVariants[0].price;
+  }
+  if (variant && product.posterVariants) {
+    const pv = product.posterVariants.find((v) => v.size === variant);
+    if (pv) return pv.price;
+    return product.posterVariants[0].price;
+  }
+  return product.price;
+}
+
 export default function ProductCard({ product }) {
   const lang = useContext(LangContext);
-  const [selectedVariant, setSelectedVariant] = useState(
-    product.variants ? product.variants[0] : null
-  );
+  const { dispatch } = useCart();
+
+  // Determine variant type
+  const hasVariants = !!product.variants;
+  const hasFrameVariants = !!product.frameVariants;
+  const hasPosterVariants = !!product.posterVariants;
+
+  const defaultVariant = hasVariants
+    ? product.variants[0]
+    : hasFrameVariants
+    ? product.frameVariants[0].size
+    : hasPosterVariants
+    ? product.posterVariants[0].size
+    : null;
+
+  const [selectedVariant, setSelectedVariant] = useState(defaultVariant);
+  const [added, setAdded] = useState(false);
 
   const name = lang === 'ml' && product.nameMl ? product.nameMl : product.name;
-  const btnLabel = lang === 'ml' ? 'WhatsApp-ൽ ഓർഡർ' : 'Order on WhatsApp';
+  const price = getEffectivePrice(product, selectedVariant);
 
-  const handleOrder = () => {
-    const variantText = selectedVariant ? ` (${selectedVariant})` : '';
-    const text = `Hi Anandha Bodhi, I'd like to order:\n${product.name}${variantText} – ₹${product.price.toLocaleString('en-IN')}.\nQuantity: __`;
-    const url = `https://wa.me/${data.whatsappNumber}?text=${encodeURIComponent(text)}`;
-    window.open(url, '_blank', 'noopener');
+  const handleAddToCart = () => {
+    dispatch({
+      type: 'ADD_ITEM',
+      payload: { product, variant: selectedVariant, quantity: 1 },
+    });
+    setAdded(true);
+    setTimeout(() => setAdded(false), 1800);
   };
 
   return (
@@ -30,22 +67,24 @@ export default function ProductCard({ product }) {
       {/* Image */}
       <div className={`product-img-wrap${!product.image ? ' no-photo' : ''}`}>
         {product.image ? (
-          <img src={product.image} alt={product.name} loading="lazy" />
+          <img src={product.image} alt={name} loading="lazy" />
         ) : (
-          'Photo coming soon'
+          <div className="product-img-placeholder">
+            <span>{name.charAt(0)}</span>
+          </div>
         )}
       </div>
 
       <div className="product-body">
         <p className="product-name">{name}</p>
-        <p className="product-price">₹{product.price.toLocaleString('en-IN')}</p>
+        <p className="product-price">₹{(price || 0).toLocaleString('en-IN')}</p>
 
         {product.description && (
           <p className="product-desc">{product.description}</p>
         )}
 
-        {/* Variant picker */}
-        {product.variants && (
+        {/* Variant picker — standard variants */}
+        {hasVariants && (
           <div className="variant-picker" role="group" aria-label="Select size">
             {product.variants.map((v) => (
               <button
@@ -59,10 +98,47 @@ export default function ProductCard({ product }) {
           </div>
         )}
 
-        {/* Order button */}
-        <button className="btn-whatsapp" onClick={handleOrder} aria-label={`${btnLabel} – ${product.name}`}>
-          {WA_ICON}
-          {btnLabel}
+        {/* Variant picker — frame variants */}
+        {hasFrameVariants && (
+          <div className="variant-picker" role="group" aria-label="Select frame size">
+            {product.frameVariants.map((fv) => (
+              <button
+                key={fv.size}
+                className={`variant-btn${selectedVariant === fv.size ? ' active' : ''}`}
+                onClick={() => setSelectedVariant(fv.size)}
+              >
+                {fv.size} — ₹{fv.price}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Variant picker — poster variants */}
+        {hasPosterVariants && (
+          <div className="variant-picker" role="group" aria-label="Select poster size">
+            {product.posterVariants.map((pv) => (
+              <button
+                key={pv.size}
+                className={`variant-btn${selectedVariant === pv.size ? ' active' : ''}`}
+                onClick={() => setSelectedVariant(pv.size)}
+              >
+                {pv.size} — ₹{pv.price}
+              </button>
+            ))}
+          </div>
+        )}
+
+        {/* Add to Cart button */}
+        <button
+          className={`btn-add-to-cart${added ? ' added' : ''}`}
+          onClick={handleAddToCart}
+          aria-label={`Add ${name} to cart`}
+        >
+          {added ? (
+            <>{CHECK_ICON} {lang === 'ml' ? 'ചേർത്തു!' : 'Added!'}</>
+          ) : (
+            <>{CART_ICON} {lang === 'ml' ? 'കാർട്ടിൽ ചേർക്കൂ' : 'Add to Cart'}</>
+          )}
         </button>
       </div>
     </div>

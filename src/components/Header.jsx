@@ -1,6 +1,8 @@
-import React, { useContext } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import React, { useState, useRef, useEffect, useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { LangContext } from '../App.jsx';
+import { useCart } from '../context/CartContext.jsx';
+import data from '../data/products.json';
 
 const WA_ICON = (
   <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -9,55 +11,200 @@ const WA_ICON = (
   </svg>
 );
 
-export default function Header({ lang, setLang, activePage, setPage }) {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const isHome = location.pathname === '/';
+const CART_ICON = (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 001.96-1.61L23 6H6"/>
+  </svg>
+);
 
-  const handleBack = () => {
-    navigate(-1);
+const CLOSE_ICON = (
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+  </svg>
+);
+
+const HAMBURGER_ICON = (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+  </svg>
+);
+
+const CHEVRON_DOWN = (
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+    <polyline points="6 9 12 15 18 9"/>
+  </svg>
+);
+
+export default function Header({ lang, setLang, onCartOpen }) {
+  const navigate = useNavigate();
+  const { totalItems } = useCart();
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [megaActive, setMegaActive] = useState(null); // category id
+  const [mobileExpanded, setMobileExpanded] = useState(null);
+  const headerRef = useRef(null);
+
+  // Close mega menu on outside click
+  useEffect(() => {
+    function handler(e) {
+      if (headerRef.current && !headerRef.current.contains(e.target)) {
+        setMegaActive(null);
+      }
+    }
+    document.addEventListener('mousedown', handler);
+    return () => document.removeEventListener('mousedown', handler);
+  }, []);
+
+  // Lock body scroll when mobile drawer is open
+  useEffect(() => {
+    document.body.style.overflow = mobileOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [mobileOpen]);
+
+  const goTo = (path) => {
+    navigate(path);
+    setMobileOpen(false);
+    setMegaActive(null);
   };
 
-  const handleHome = () => {
-    setPage('home');
-    navigate('/');
+  const toggleMobile = (catId) => {
+    setMobileExpanded((prev) => (prev === catId ? null : catId));
   };
 
   return (
-    <header className="site-header">
-      <div className="header-inner">
-        {/* Back button — only on inner pages */}
-        {!isHome ? (
-          <button className="header-back" onClick={handleBack} aria-label="Go back">
-            ← Back
-          </button>
-        ) : (
-          <div className="lang-toggle">
-            <button
-              className={`lang-btn${lang === 'en' ? ' active' : ''}`}
-              onClick={() => setLang('en')}
-              aria-label="Switch to English"
-            >
-              EN
+    <>
+      <header className="site-header" ref={headerRef}>
+        <div className="header-inner">
+          {/* Logo */}
+          <div className="header-logo" onClick={() => goTo('/')} role="button" tabIndex={0} onKeyDown={(e) => e.key === 'Enter' && goTo('/')}>
+            <span className="logo-title">Anandha Bodhi</span>
+            <span className="logo-sub">Sacred Living. Timeless Tradition.</span>
+          </div>
+
+          {/* Desktop Nav */}
+          <nav className="header-desktop-nav" aria-label="Main navigation">
+            <button className="nav-link" onClick={() => goTo('/')}>Home</button>
+            {data.categories.map((cat) => (
+              <div
+                key={cat.id}
+                className="nav-item-wrap"
+                onMouseEnter={() => setMegaActive(cat.id)}
+                onMouseLeave={() => setMegaActive(null)}
+              >
+                <button
+                  className={`nav-link has-mega${megaActive === cat.id ? ' active' : ''}`}
+                  onClick={() => { goTo(`/category/${cat.id}`); setMegaActive(null); }}
+                  onFocus={() => setMegaActive(cat.id)}
+                  aria-haspopup="true"
+                  aria-expanded={megaActive === cat.id}
+                >
+                  {cat.emoji} {lang === 'ml' && cat.nameMl ? cat.nameMl : cat.name}
+                  <span className="nav-chevron">{CHEVRON_DOWN}</span>
+                </button>
+                {/* Mega dropdown */}
+                {megaActive === cat.id && (
+                  <div className="mega-panel" role="menu">
+                    <div className="mega-panel-inner">
+                      <div className="mega-category-title" onClick={() => goTo(`/category/${cat.id}`)}>
+                        {cat.emoji} {lang === 'ml' && cat.nameMl ? cat.nameMl : cat.name}
+                        <span className="mega-view-all">View All →</span>
+                      </div>
+                      <div className="mega-sub-grid">
+                        {(cat.subCollections || []).filter(s => s !== 'All').map((sub) => (
+                          <button
+                            key={sub}
+                            className="mega-sub-link"
+                            onClick={() => goTo(`/category/${cat.id}?sub=${encodeURIComponent(sub)}`)}
+                            role="menuitem"
+                          >
+                            {sub}
+                          </button>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
+            <button className="nav-link" onClick={() => goTo('/about')}>About</button>
+          </nav>
+
+          {/* Right side actions */}
+          <div className="header-actions">
+            {/* Language toggle */}
+            <div className="lang-toggle">
+              <button className={`lang-btn${lang === 'en' ? ' active' : ''}`} onClick={() => setLang('en')} aria-label="English">EN</button>
+              <button className={`lang-btn${lang === 'ml' ? ' active' : ''}`} onClick={() => setLang('ml')} aria-label="Malayalam">മല</button>
+            </div>
+            {/* Cart */}
+            <button className="cart-btn" onClick={onCartOpen} aria-label={`Cart, ${totalItems} items`}>
+              {CART_ICON}
+              {totalItems > 0 && <span className="cart-badge">{totalItems > 99 ? '99+' : totalItems}</span>}
             </button>
-            <button
-              className={`lang-btn${lang === 'ml' ? ' active' : ''}`}
-              onClick={() => setLang('ml')}
-              aria-label="Switch to Malayalam"
-            >
-              മല
+            {/* Hamburger (mobile only) */}
+            <button className="hamburger-btn" onClick={() => setMobileOpen(true)} aria-label="Open menu">
+              {HAMBURGER_ICON}
             </button>
           </div>
-        )}
-
-        {/* Logo */}
-        <div className="header-logo" onClick={handleHome} role="button" tabIndex={0}>
-          Anandha Bodhi
-          <span>Sacred Living. Timeless Tradition.</span>
         </div>
 
-        <div className="header-spacer" />
-      </div>
-    </header>
+        {/* Desktop mega menu overlay backdrop */}
+        {megaActive && <div className="mega-backdrop" onMouseEnter={() => setMegaActive(null)} />}
+      </header>
+
+      {/* Mobile Drawer */}
+      {mobileOpen && (
+        <div className="mobile-drawer-overlay" onClick={() => setMobileOpen(false)} aria-hidden="true" />
+      )}
+      <nav className={`mobile-drawer${mobileOpen ? ' open' : ''}`} aria-label="Mobile navigation">
+        <div className="mobile-drawer-header">
+          <span className="mobile-drawer-logo">Anandha Bodhi</span>
+          <button className="mobile-drawer-close" onClick={() => setMobileOpen(false)} aria-label="Close menu">
+            {CLOSE_ICON}
+          </button>
+        </div>
+        <div className="mobile-drawer-body">
+          <button className="mobile-nav-link" onClick={() => goTo('/')}>🏠 Home</button>
+          {data.categories.map((cat) => (
+            <div key={cat.id} className="mobile-nav-accordion">
+              <button
+                className={`mobile-nav-link accordion-trigger${mobileExpanded === cat.id ? ' expanded' : ''}`}
+                onClick={() => toggleMobile(cat.id)}
+              >
+                <span>{cat.emoji} {lang === 'ml' && cat.nameMl ? cat.nameMl : cat.name}</span>
+                <span className={`accordion-chevron${mobileExpanded === cat.id ? ' open' : ''}`}>{CHEVRON_DOWN}</span>
+              </button>
+              {mobileExpanded === cat.id && (
+                <div className="mobile-sub-links">
+                  <button className="mobile-sub-link all-link" onClick={() => goTo(`/category/${cat.id}`)}>
+                    All {lang === 'ml' && cat.nameMl ? cat.nameMl : cat.name}
+                  </button>
+                  {(cat.subCollections || []).filter(s => s !== 'All').map((sub) => (
+                    <button
+                      key={sub}
+                      className="mobile-sub-link"
+                      onClick={() => goTo(`/category/${cat.id}?sub=${encodeURIComponent(sub)}`)}
+                    >
+                      {sub}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+          <button className="mobile-nav-link" onClick={() => goTo('/about')}>ℹ️ About</button>
+          {/* WhatsApp quick chat */}
+          <a
+            href={`https://wa.me/${data.whatsappNumber}?text=${encodeURIComponent('Hi Anandha Bodhi, I have a question about your products.')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-wa-link"
+          >
+            {WA_ICON}
+            Chat on WhatsApp
+          </a>
+        </div>
+      </nav>
+    </>
   );
 }
